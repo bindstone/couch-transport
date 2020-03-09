@@ -1,0 +1,26 @@
+This is an experimental POC
+
+Local Links running the application
+
+http://127.0.0.1:5984/_utils
+
+Data
+
+https://data.public.lu/fr/datasets/parc-automobile-du-luxembourg/
+
+CouchDB
+
+https://couchdb.apache.org/
+
+https://github.com/IBM-Cloud/java-cloudant
+
+https://docs.couchdb.org/en/3.0.0/api/database/find.html
+
+https://developer.ibm.com/tutorials/getting-started-with-microservices-using-spring-boot-and-cloudant/
+
+https://github.com/gangchen03/refarch‑cloudnative‑micro‑socialreview.git
+
+Articles
+
+https://blog.cloudant.com/2019/11/21/Best-and-Worst-Practices.html
+

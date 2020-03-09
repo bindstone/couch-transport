@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  couchdb:
+    image: couchdb:3.0.0
+    ports:
+      - 5984:5984
+    environment:
+      - COUCHDB_USER=master
+      - COUCHDB_PASSWORD=letmein
+      - COUCHDB_SECRET=letmein
+      - NODENAME=building
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 1025M
