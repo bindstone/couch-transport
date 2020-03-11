@@ -1,0 +1,15 @@
+This is an experimental POC
+
+Local Links running the application
+
+http://127.0.0.1:5984/_utils
+
+Data
+
+https://data.public.lu/fr/datasets/parc-automobile-du-luxembourg/
+
+MongoDB
+
+https://spring.io/guides/gs/accessing-data-mongodb/
+
+https://www.devglan.com/spring-boot/spring-boot-mongodb-crud
