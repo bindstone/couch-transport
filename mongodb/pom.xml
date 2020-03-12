@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.bindstone</groupId>
-    <artifactId>transport</artifactId>
+    <artifactId>transport-mongo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>transport</name>
     <description>Demo project for Spring Boot</description>

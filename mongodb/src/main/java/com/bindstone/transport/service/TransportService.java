@@ -29,10 +29,12 @@ public class TransportService {
 
         Duration interval = Duration.between(start, end);
         System.out.println("Execution time in seconds: " + interval.getSeconds());
+
         return list;
     }
 
     public  List<Transport> findAll() {
+
         Instant start = Instant.now();
         List<Transport> list = transportRepository.findAll();
         Instant end = Instant.now();

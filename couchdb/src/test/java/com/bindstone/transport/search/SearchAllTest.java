@@ -13,6 +13,6 @@ public class SearchAllTest {
 
     @Test
     public void findAll() {
-        System.out.println(transportService.findAll());
+        System.out.println(transportService.findAll().size());
     }
 }

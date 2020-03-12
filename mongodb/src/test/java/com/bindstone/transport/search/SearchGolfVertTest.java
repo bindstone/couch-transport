@@ -21,19 +21,4 @@ public class SearchGolfVertTest {
         query.addCriteria(Criteria.where("couleur").is("VERT"));
         System.out.println(transportService.find(query));
     }
-
-    // http://127.0.0.1:5984/_utils/#database/transport/_index
-
-    /**
-     * {
-     *    "index": {
-     *       "fields": [
-     *          "LIBMRQ"
-     *       ]
-     *    },
-     *    "name": "libmrq-json-index",
-     *    "type": "json"
-     * }
-     */
-
 }

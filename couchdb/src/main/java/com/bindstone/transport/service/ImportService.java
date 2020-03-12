@@ -11,6 +11,8 @@ import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -27,6 +29,16 @@ public class ImportService {
     }
 
     public void importData() throws FileNotFoundException, XMLStreamException {
+        System.out.println("Start import data:");
+        Instant start = Instant.now();
+        importDataExec();
+        Instant end = Instant.now();
+
+        Duration interval = Duration.between(start, end);
+        System.out.println("Execution time in seconds: " + interval.getSeconds());
+    }
+
+    private void importDataExec() throws FileNotFoundException, XMLStreamException {
 
         //val fi = FileInputStream("/Users/qs/Documents/kotlin/KBase/data/sample.xml")
         FileInputStream fi = new FileInputStream("/Users/qs/Documents/kotlin/KBase/data/parc-automobile-202003.xml");
@@ -66,6 +78,7 @@ public class ImportService {
                     if (list.size() > 1000) {
                         transportRepository.bulk(list);
                         list.clear();
+                        System.out.print(".");
                     }
                 } else {
                     if (key != null && data != null) {
