@@ -14,5 +14,6 @@ https://docs.spring.io/spring-data/elasticsearch/docs/3.2.5.RELEASE/reference/ht
 
 https://piotrminkowski.com/2019/03/29/elasticsearch-with-spring-boot/
 
+https://www.elastic.co/guide/en/elasticsearch/client/java-rest/master/java-rest-high-search.html
 
 

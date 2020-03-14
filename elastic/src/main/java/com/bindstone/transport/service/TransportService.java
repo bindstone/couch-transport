@@ -42,10 +42,11 @@ public class TransportService {
 
         Instant start = Instant.now();
         transportRepository.findCustomAll();
-        Iterable<Transport> iter = transportRepository.findAll();
-        List<Transport> list = StreamSupport
-                .stream(iter.spliterator(), false)
-                .collect(Collectors.toList());
+        //Iterable<Transport> iter = transportRepository.findAll();
+        //List<Transport> list = StreamSupport
+        //        .stream(iter.spliterator(), false)
+        //        .collect(Collectors.toList());
+        List<Transport> list = transportRepository.findCustomAll();
 
         Instant end = Instant.now();
 
