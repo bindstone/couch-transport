@@ -1,0 +1,18 @@
+This is an experimental POC
+
+Local Links running the application
+
+http://127.0.0.1:5000/#!/
+
+Data
+
+https://data.public.lu/fr/datasets/parc-automobile-du-luxembourg/
+
+Elastic Search
+
+https://docs.spring.io/spring-data/elasticsearch/docs/3.2.5.RELEASE/reference/html/#elasticsearch.clients.rest
+
+https://piotrminkowski.com/2019/03/29/elasticsearch-with-spring-boot/
+
+
+
