@@ -13,3 +13,6 @@ MongoDB
 https://spring.io/guides/gs/accessing-data-mongodb/
 
 https://www.devglan.com/spring-boot/spring-boot-mongodb-crud
+
+
+https://www.simplethread.com/was-mongodb-ever-the-right-choice/

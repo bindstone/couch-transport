@@ -34,7 +34,7 @@ public class ImportService {
     private final RestHighLevelClient restHighLevelClient;
     private final ObjectMapper objectMapper;
 
-    public ImportService(@Qualifier("elasticClientConfig") RestHighLevelClient restHighLevelClient, ObjectMapper objectMapper) {
+    public ImportService(RestHighLevelClient restHighLevelClient, ObjectMapper objectMapper) {
         this.restHighLevelClient = restHighLevelClient;
         this.objectMapper = objectMapper;
     }

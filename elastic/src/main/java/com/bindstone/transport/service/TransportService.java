@@ -25,10 +25,11 @@ public class TransportService {
 
         Instant start = Instant.now();
 
-        Iterable<Transport> iter = transportRepository.findAll();
+        Iterable<Transport> iter = List.of();
         List<Transport> list = StreamSupport
                         .stream(iter.spliterator(), false)
                         .collect(Collectors.toList());
+
         Instant end = Instant.now();
 
         Duration interval = Duration.between(start, end);
@@ -40,15 +41,16 @@ public class TransportService {
     public  List<Transport> findAll() {
 
         Instant start = Instant.now();
-
-        List<Transport> list = transportRepository.findAll();
+        transportRepository.findCustomAll();
+        Iterable<Transport> iter = transportRepository.findAll();
+        List<Transport> list = StreamSupport
+                .stream(iter.spliterator(), false)
+                .collect(Collectors.toList());
 
         Instant end = Instant.now();
 
         Duration interval = Duration.between(start, end);
-
         System.out.println("Execution time in seconds: " + interval.getSeconds());
-
         return list;
     }
 
