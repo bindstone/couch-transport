@@ -26,7 +26,7 @@ public class Transport {
     private String versionPVR;
     private String datePremiereMiseEncirculation;
     private String datePremiereMiseEnCirculationLuxembourg;
-    private String dateMiseEnCirculationParPropriétaire;
+    private String dateMiseEnCirculationParProprietaire;
     private String dateMiseHorsCirculation;
     private String masseVide;
     private String masseMaximaleAutorisee;
@@ -206,12 +206,12 @@ public class Transport {
         this.datePremiereMiseEnCirculationLuxembourg = datePremiereMiseEnCirculationLuxembourg;
     }
 
-    public String getDateMiseEnCirculationParPropriétaire() {
-        return dateMiseEnCirculationParPropriétaire;
+    public String getdateMiseEnCirculationParProprietaire() {
+        return dateMiseEnCirculationParProprietaire;
     }
 
-    public void setDateMiseEnCirculationParPropriétaire(String dateMiseEnCirculationParPropriétaire) {
-        this.dateMiseEnCirculationParPropriétaire = dateMiseEnCirculationParPropriétaire;
+    public void setdateMiseEnCirculationParProprietaire(String dateMiseEnCirculationParProprietaire) {
+        this.dateMiseEnCirculationParProprietaire = dateMiseEnCirculationParProprietaire;
     }
 
     public String getDateMiseHorsCirculation() {
@@ -570,7 +570,7 @@ public class Transport {
                 .add("versionPVR='" + versionPVR + "'")
                 .add("datePremiereMiseEncirculation='" + datePremiereMiseEncirculation + "'")
                 .add("datePremiereMiseEnCirculationLuxembourg='" + datePremiereMiseEnCirculationLuxembourg + "'")
-                .add("dateMiseEnCirculationParPropriétaire='" + dateMiseEnCirculationParPropriétaire + "'")
+                .add("dateMiseEnCirculationParProprietaire='" + dateMiseEnCirculationParProprietaire + "'")
                 .add("dateMiseHorsCirculation='" + dateMiseHorsCirculation + "'")
                 .add("masseVide='" + masseVide + "'")
                 .add("masseMaximaleAutorisee='" + masseMaximaleAutorisee + "'")

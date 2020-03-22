@@ -1,0 +1,15 @@
+This is an experimental POC
+
+Local Links running the application
+
+http://127.0.0.1:7474/
+
+Data
+
+https://data.public.lu/fr/datasets/parc-automobile-du-luxembourg/
+
+Neo4J
+
+https://neo4j.com/developer/spring-data-neo4j/
+
+

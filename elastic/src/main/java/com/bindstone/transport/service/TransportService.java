@@ -41,12 +41,12 @@ public class TransportService {
     public  List<Transport> findAll() {
 
         Instant start = Instant.now();
-        transportRepository.findCustomAll();
+        transportRepository.find1000();
         //Iterable<Transport> iter = transportRepository.findAll();
         //List<Transport> list = StreamSupport
         //        .stream(iter.spliterator(), false)
         //        .collect(Collectors.toList());
-        List<Transport> list = transportRepository.findCustomAll();
+        List<Transport> list = transportRepository.find1000();
 
         Instant end = Instant.now();
 

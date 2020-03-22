@@ -1,1 +1,1 @@
-This is an experimental POC for comparing CouchDB and MongoDB
+This is an experimental POC for comparing CouchDB, MongoDB and ElasticSearch.

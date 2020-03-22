@@ -111,7 +111,7 @@ public class ImportService {
                             case "PVRVER" : transport.setVersionPVR(data); break;
                             case "DATCIRPRM" : transport.setDatePremiereMiseEncirculation(data); break;
                             case "DATCIR_GD" : transport.setDatePremiereMiseEnCirculationLuxembourg(data); break;
-                            case "DATCIR" : transport.setDateMiseEnCirculationParPropriétaire(data); break;
+                            case "DATCIR" : transport.setdateMiseEnCirculationParProprietaire(data); break;
                             case "DATHORCIR" : transport.setDateMiseHorsCirculation(data); break;
                             case "MVID" : transport.setMasseVide(data); break;
                             case "MMA" : transport.setMasseMaximaleAutorisee(data); break;

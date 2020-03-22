@@ -59,7 +59,7 @@ public class Transport extends Document {
     private String datePremiereMiseEnCirculationLuxembourg;
 
     @SerializedName("DATCIR")
-    private String dateMiseEnCirculationParPropriétaire;
+    private String dateMiseEnCirculationParProprietaire;
 
     @SerializedName("DATHORCIR")
     private String dateMiseHorsCirculation;
@@ -323,12 +323,12 @@ public class Transport extends Document {
         this.datePremiereMiseEnCirculationLuxembourg = datePremiereMiseEnCirculationLuxembourg;
     }
 
-    public String getDateMiseEnCirculationParPropriétaire() {
-        return dateMiseEnCirculationParPropriétaire;
+    public String getdateMiseEnCirculationParProprietaire() {
+        return dateMiseEnCirculationParProprietaire;
     }
 
-    public void setDateMiseEnCirculationParPropriétaire(String dateMiseEnCirculationParPropriétaire) {
-        this.dateMiseEnCirculationParPropriétaire = dateMiseEnCirculationParPropriétaire;
+    public void setdateMiseEnCirculationParProprietaire(String dateMiseEnCirculationParProprietaire) {
+        this.dateMiseEnCirculationParProprietaire = dateMiseEnCirculationParProprietaire;
     }
 
     public String getDateMiseHorsCirculation() {
@@ -687,7 +687,7 @@ public class Transport extends Document {
                 .add("versionPVR='" + versionPVR + "'")
                 .add("datePremiereMiseEncirculation='" + datePremiereMiseEncirculation + "'")
                 .add("datePremiereMiseEnCirculationLuxembourg='" + datePremiereMiseEnCirculationLuxembourg + "'")
-                .add("dateMiseEnCirculationParPropriétaire='" + dateMiseEnCirculationParPropriétaire + "'")
+                .add("dateMiseEnCirculationParProprietaire='" + dateMiseEnCirculationParProprietaire + "'")
                 .add("dateMiseHorsCirculation='" + dateMiseHorsCirculation + "'")
                 .add("masseVide='" + masseVide + "'")
                 .add("masseMaximaleAutorisee='" + masseMaximaleAutorisee + "'")
