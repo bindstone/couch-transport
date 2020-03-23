@@ -1,0 +1,26 @@
+This is an experimental POC
+
+Local Links running the application
+
+http://127.0.0.1:5984/_utils
+
+Data
+
+https://data.public.lu/fr/datasets/parc-automobile-du-luxembourg/
+
+Reactive
+
+https://projectreactor.io/docs/core/release/api/reactor/core/publisher/Flux.html
+
+https://developer.okta.com/blog/2018/09/24/reactive-apis-with-spring-webflux
+
+MongoDB
+
+https://developer.okta.com/blog/2019/02/21/reactive-with-spring-boot-mongodb
+
+https://spring.io/guides/gs/accessing-data-mongodb/
+
+https://www.devglan.com/spring-boot/spring-boot-mongodb-crud
+
+
+https://www.simplethread.com/was-mongodb-ever-the-right-choice/
