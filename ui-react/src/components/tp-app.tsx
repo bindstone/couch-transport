@@ -1,3 +1,4 @@
+import 'semantic-ui-css/semantic.min.css'
 import * as React from "react";
 import {TPTable} from "./tp-table";
 
