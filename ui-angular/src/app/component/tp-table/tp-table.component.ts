@@ -1,6 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {TransportService} from "../../service/transport.service";
 import {Observable, Subscription} from "rxjs";
+import {debounce, throttleTime} from "rxjs/operators";
 
 @Component({
   selector: 'tp-table',
@@ -13,7 +14,8 @@ export class TpTableComponent implements OnInit, OnDestroy {
   private transportSubscription: Subscription;
 
   constructor(private transportService:TransportService) {
-    this.transportObservable = transportService.getAll();
+    this.transportObservable = transportService.getAll()
+      .pipe(debounce(100));
   }
 
   ngOnInit(): void {

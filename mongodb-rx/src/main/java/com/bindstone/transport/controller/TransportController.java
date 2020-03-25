@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 
+import java.time.Duration;
+
 @RestController
 @RequestMapping("/api/v1/transport")
 public class TransportController {
@@ -18,9 +20,10 @@ public class TransportController {
         this.transportService = transportService;
     }
 
-    @GetMapping(produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    @GetMapping(produces = MediaType.APPLICATION_STREAM_JSON_VALUE)
     public Flux<Transport> getAll() {
         System.out.println("Get All");
-        return transportService.findAll().limitRate(10,10);
+        return transportService.findAll()
+                .delayElements(Duration.ofSeconds(0));
     }
 }
