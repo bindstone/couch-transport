@@ -16,6 +16,7 @@
         <module>mongodb</module>
         <module>mongodb-rx</module>
         <module>neo4j</module>
+        <module>neo4j-rx</module>
     </modules>
 
 </project>
